@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipbook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="canvas" style="display:none;">
+    <div class="magazine-viewport">
+      <div class="container">
+        <div class="magazine">
+          <div ignore="1" class="next-button"></div>
+          <div ignore="1" class="previous-button"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nav">
+    <div class="nav_overlay nav_top">
+      <button id="go-zoom" class="nav-zoom nav-zoom-in" title="Zoom"><span class="nav-zoom-icon"></span></button>
+    </div>
+    <div id="nav_page" class="nav_overlay">
+      <button id="go-first">&laquo;</button>
+      <button id="go-prev" class="nav-page-arrow" title="Halaman sebelumnya" aria-label="Halaman sebelumnya"><span class="nav-prev-icon"></span></button>
+      <span id="page-num"></span>
+      <button id="go-next" class="nav-page-arrow" title="Halaman berikutnya" aria-label="Halaman berikutnya"><span class="nav-next-icon"></span></button>
+      <button id="go-last">&raquo;</button>
+    </div>
+    <div class="nav_overlay nav_bottom">
+      <button id="go-bookmark" class="nav-bookmark nav-bookmark-off" title="Tandai halaman"><span class="nav-bookmark-icon"></span></button>
+    </div>
+  </div>
+  <script src="jquery.min.js"></script>
+  <script src="turn.min.js"></script>
+  <script src="zoom.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
