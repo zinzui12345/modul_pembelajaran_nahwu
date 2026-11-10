@@ -321,6 +321,7 @@ function refreshVisiblePageSvgs() {
         $(this).zoom('flipbook').turn('previous');
       },
       zoomIn: function () {
+        $magazine.turn('disable', true);
         $('#go-zoom').removeClass('nav-zoom-in').addClass('nav-zoom-out');
         $('#nav_page').hide();
         setTimeout(function() {
@@ -328,6 +329,7 @@ function refreshVisiblePageSvgs() {
         }, 75);
       },
       zoomOut: function () {
+        $magazine.turn('disable', false);
         $('#go-zoom').removeClass('nav-zoom-out').addClass('nav-zoom-in');
         $('#nav_page').show();
         setTimeout(function(){
