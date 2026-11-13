@@ -458,6 +458,8 @@ function resizeViewport() {
 		height = $(window).height(),
 		options = $('.magazine').turn('options');
 
+	document.getElementById('nav').classList.toggle('portrait', height > width);
+
 	$('.magazine').removeClass('animated');
 
 	$('.magazine-viewport').css({
